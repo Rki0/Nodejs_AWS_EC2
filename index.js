@@ -20,7 +20,8 @@ const config = require("./config/key");
 const mongoose = require("mongoose");
 
 mongoose
-  .connect(config.mongoURI)
+  // .connect(config.mongoURI)
+  .connect("mongodb://rkio:pksy1228@54.180.99.254:27017")
   .then(() => console.log("MongoDB Connected..."))
   .catch((err) => console.log("Error", err));
 ////////////////
